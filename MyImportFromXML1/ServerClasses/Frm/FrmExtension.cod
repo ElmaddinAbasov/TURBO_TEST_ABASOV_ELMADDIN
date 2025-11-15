@@ -1,0 +1,28 @@
+class inherited Bas.Frm.Ref.Project "just_an_extension";
+
+inclass public
+    var FillUsingTemplate : IButton;
+    var nname : String;
+    var StartDate : Date;
+    var E_EndDate : Date;
+    var Description : String;
+inobject public
+    proc FillFields(var Nname : String; var startDate : Date);
+        if (Nname = '') then
+               return;
+        end
+        nname = Nname;
+        StartDate = startDate;
+    end
+    proc AddOnClick;
+         nname = "Test project";
+         StartDate = Date(time());
+         E_EndDate = Date(StartDate + 30);
+         Description = nname + Str(StartDate);
+    end;
+    proc Check;
+               if StartDate = 01.01.00 then
+                      E_EndDate = 01.01.00;
+               end
+    end
+end

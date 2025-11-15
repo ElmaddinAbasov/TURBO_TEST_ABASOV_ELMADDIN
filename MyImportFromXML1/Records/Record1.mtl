@@ -1,0 +1,5 @@
+record Record1 inherited Com.Base.CodeName title "just_a_records";
+      field first_name :String;
+      field age :Integer;
+      field sex :String(2);
+end;

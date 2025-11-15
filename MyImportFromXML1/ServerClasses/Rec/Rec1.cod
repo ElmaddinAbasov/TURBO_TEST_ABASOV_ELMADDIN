@@ -1,0 +1,5 @@
+class inherited Com.Rec.CodeName "just_a_record";
+
+inclass public
+var RecordClass:Class Record := Record1; 
+end

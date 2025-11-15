@@ -1,0 +1,15 @@
+class inherited Com.Frm.ICodeName "just_a_record";
+
+inclass public
+var RecordClass:Class Com.Rec.CodeName := Rec.Rec1;
+
+inobject  private
+proc Init;
+  inherited Init;
+
+  Code.Visible = true;
+  Name.Visible = true;
+
+end;
+
+end

@@ -1,0 +1,14 @@
+class inherited Com.Tab.CodeName "just_a_record";
+inclass public 
+ 
+  var RecordClass  :Class Com.Rec.IRecord  := Rec.Rec1; 
+  var EditorClass  :Class Com.Frm.IEditor  := Frm.Rec1; 
+ 
+inobject private 
+ 
+  proc Init; 
+    inherited Init; 
+    AddCode; 
+    AddName;  
+  end;
+end;
